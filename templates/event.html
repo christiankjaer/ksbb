@@ -1,0 +1,16 @@
+<div class="list-group-item">
+    <h4>
+    $if(link)$
+    <a href="$link$">
+    $endif$
+    $name$
+    $if(link)$
+    </a>
+    $endif$
+    </h4>
+    <h4>$location$, $time$</h4>
+    $body$
+    <script>
+    document.write(moment("$date$", "YYYY-MM-DD").fromNow());
+    </script>
+</div>
