@@ -1,5 +1,16 @@
-<div class="card-columns">
-$for(musicians)$
-    $body$
-$endfor$
+<div class="row">
+    <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+        $for(musicians)$
+        <a class="list-group-item list-group-item-action" id="list-$role$-list" data-toggle="list" href="#list-$role$" role="tab" aria-controls="$role$">$role$ - $name$</a>
+        $endfor$
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+        $for(musicians)$
+            $body$
+        $endfor$
+        </div>
+    </div>
 </div>

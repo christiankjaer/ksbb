@@ -1,10 +1,22 @@
-<div class="card">
-    $if(img)$
-    <img class="card-img-top" src="$img$" alt="Card image cap">
-    $endif$
-    <div class="card-body">
-        <h4 class="card-title">$name$</h4>
-        <h6 class="card-subtitle mb-2 text-muted">$role$</h6>
-        <p class="card-text">$body$</p>
+<div class="tab-pane fade" id="list-$role$" role="tabpanel" aria-labelledby="list-$role$-list">
+    <div class="card">
+        <div class="card-block">
+            <div class="row">
+            <div class="col-4">
+            $if(img)$
+                <img class="img-fluid img-thumbnail" src="$img$" alt="Card image cap">
+            $endif$
+            </div>
+            <div class="col-8">
+            <div class="card-body">
+            <h4 class="card-title">$name$</h4>
+            <h6 class="card-subtitle">$role$</h6>
+            <p class="card-text">
+                $body$
+            </p>
+            </div>
+            </div>
+            </div>
+        </div>
     </div>
 </div>
