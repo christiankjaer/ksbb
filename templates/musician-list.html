@@ -1,16 +1,9 @@
 <div class="row">
-    <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
+    <ul class="collection">
         $for(musicians)$
-        <a class="list-group-item list-group-item-action" id="list-$role$-list" data-toggle="list" href="#list-$role$" role="tab" aria-controls="$role$">$role$ - $name$</a>
-        $endfor$
-        </div>
-    </div>
-    <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
-        $for(musicians)$
+        <li class="collection-item">
             $body$
+        </li>
         $endfor$
-        </div>
-    </div>
+    </ul>
 </div>

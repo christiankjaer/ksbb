@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
     <head>
         <!-- Required meta tags -->
@@ -7,9 +7,11 @@
 
         <!-- Bootstrap CSS -->
         <title>King Size Big Band - $title$</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'  type='text/css'>
-        <link href="/css/default.css" rel="stylesheet">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+        <link href="/css/default.css" rel="stylesheet" media="screen,projection"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
     </head>
     <body>
@@ -21,64 +23,69 @@
         js.src = "//connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v2.10";
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="/">
-                    <img height="40px" src="/images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Velkommen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about.html">Om King Size</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/musicians.html">Musikerne</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/events.html">Koncerter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/booking.html">Booking</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="/images/galaksen3.jpg" alt="First slide">
+        <nav class="grey darken-3" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="/">
+                    <img class="responsive-img" style="height: 64px;" src="/images/logo.png">
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/about.html">Om King Size</a></li>
+                    <li><a href="/musicians.html">Musikerne</a></li>
+                    <li><a href="/events.html">Koncerter</a></li>
+                    <li><a href="/booking.html">Booking</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="/about.html">Om King Size</a></li>
+                    <li><a href="/musicians.html">Musikerne</a></li>
+                    <li><a href="/events.html">Koncerter</a></li>
+                    <li><a href="/booking.html">Booking</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center teal-text text-lighten-2">King Size Big Band</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Et af Københavns bedste</h5>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/06.jpg" alt="Second slide">
+                    <div class="row center">
+                        <a href="/booking.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Book os</a>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/galaksen2.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/01.jpg" alt="Second slide">
-                    </div>
+                    <br><br>
+
                 </div>
             </div>
+            <div class="parallax"><img src="./images/banner.jpg" alt="Background image"></div>
         </div>
+
+
+        $body$
+
+          <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+          <p class="grey-text text-lighten-4">King Size Big Band v/ Jens Norrild</p>
+          <p class="grey-text text-lighten-4">Tlf: +45 3075 4392</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
         <div class="container">
-            <hr />
-            $body$
-            <hr />
-            <footer>
-                <p class="float-right"><a href="#">Til toppen</a></p>
-                <p>&copy; 2017 King Size Big Band - v/ Jens Norrild - Tlf: +45 3075 4392</p>
-            </footer>
+            Design af <a class="brown-text text-lighten-4" href="https://ckjaer.dk">Christian Kjær Larsen</a>
         </div>
+    </div>
+          </footer>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="js/init.js"></script>
     </body>
 </html>

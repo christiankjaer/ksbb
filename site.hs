@@ -14,6 +14,9 @@ main =
     match "css/*.css" $ do
       route idRoute
       compile compressCssCompiler
+    match "js/*.js" $ do
+      route idRoute
+      compile copyFileCompiler
     match (fromList ["about.md"]) $ do
       route $ setExtension "html"
       compile $
